@@ -1,17 +1,17 @@
 Summary:	LibGIIGIC - a flexible library for action/event binding
 Summary(pl):	LibGIIGIC - elastyczna biblioteka do przypisywania akcji/zdarzeñ
 Name:		libgiigic
-Version:	1.0.0
+Version:	1.0.1
 Release:	1
 License:	BSD-like
 Group:		Libraries
-Source0:	http://www.ggi-project.org/ftp/ggi/current/%{name}-%{version}.src.tar.bz2
-# Source0-md5:	ad75eeb40e80732ec432337b09354bd8
+Source0:	http://www.ggi-project.org/ftp/ggi/v2.1/%{name}-%{version}.src.tar.bz2
+# Source0-md5:	ab294c824a58bc6b2a73428f19540a53
 URL:		http://www.ggi-project.org/packages/libgiigic.html
 BuildRequires:	XFree86-devel
 # for snazzymgr, which is not installed anyway
-#BuildRequires:	libggi-devel >= 2.1.0
-BuildRequires:	libgii-devel >= 0.9.0
+#BuildRequires:	libggi-devel >= 2.1.2
+BuildRequires:	libgii-devel >= 0.9.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -32,7 +32,7 @@ Summary:	Header files for libgiigic library
 Summary(pl):	Pliki nag³ówkowe biblioteki libgiigic
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	libgii-devel >= 0.9.0
+Requires:	libgii-devel >= 0.9.2
 
 %description devel
 Header files for libgiigic library.
