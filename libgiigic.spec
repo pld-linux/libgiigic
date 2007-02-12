@@ -1,5 +1,5 @@
 Summary:	LibGIIGIC - a flexible library for action/event binding
-Summary(pl):	LibGIIGIC - elastyczna biblioteka do przypisywania akcji/zdarzeÒ
+Summary(pl.UTF-8):   LibGIIGIC - elastyczna biblioteka do przypisywania akcji/zdarze≈Ñ
 Name:		libgiigic
 Version:	1.0.1
 Release:	1
@@ -20,16 +20,16 @@ library running on top of libgii, which implements easy
 Descent/Forsaken style input configuration. It basically handles
 binding of keystrokes, mice and valuators to program actions.
 
-%description -l pl
-GIC to skrÛt od General Input Configuration, czyli ogÛlnej
-konfiguracji wej∂cia. LibGIIGIC to wygodna biblioteka dzia≥aj±ca
-powyøej libgii, implementuj±ca ≥atw± konfiguracjÍ wej∂cia w stylu
-Descenta/Forsaken. Zasadniczo obs≥uguje przypisywanie naci∂niÍÊ
+%description -l pl.UTF-8
+GIC to skr√≥t od General Input Configuration, czyli og√≥lnej
+konfiguracji wej≈õcia. LibGIIGIC to wygodna biblioteka dzia≈ÇajƒÖca
+powy≈ºej libgii, implementujƒÖca ≈ÇatwƒÖ konfiguracjƒô wej≈õcia w stylu
+Descenta/Forsaken. Zasadniczo obs≈Çuguje przypisywanie naci≈õniƒôƒá
 klawiszy, myszy itp. do akcji programu.
 
 %package devel
 Summary:	Header files for libgiigic library
-Summary(pl):	Pliki nag≥Ûwkowe biblioteki libgiigic
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe biblioteki libgiigic
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libgii-devel >= 0.9.2
@@ -37,8 +37,8 @@ Requires:	libgii-devel >= 0.9.2
 %description devel
 Header files for libgiigic library.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe biblioteki libgiigic.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe biblioteki libgiigic.
 
 %prep
 %setup -q
