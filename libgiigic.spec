@@ -1,5 +1,5 @@
 Summary:	LibGIIGIC - a flexible library for action/event binding
-Summary(pl.UTF-8):   LibGIIGIC - elastyczna biblioteka do przypisywania akcji/zdarzeń
+Summary(pl.UTF-8):	LibGIIGIC - elastyczna biblioteka do przypisywania akcji/zdarzeń
 Name:		libgiigic
 Version:	1.0.1
 Release:	1
@@ -29,7 +29,7 @@ klawiszy, myszy itp. do akcji programu.
 
 %package devel
 Summary:	Header files for libgiigic library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki libgiigic
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libgiigic
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libgii-devel >= 0.9.2
