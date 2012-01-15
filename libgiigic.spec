@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_with	static_modules	# build static library AND make all modules builtin (also in shared lib)
+#
 Summary:	LibGIIGIC - a flexible library for action/event binding
 Summary(pl.UTF-8):	LibGIIGIC - elastyczna biblioteka do przypisywania akcji/zdarzeń
 Name:		libgiigic
@@ -58,7 +62,8 @@ Biblioteki statyczne libgiigic.
 %setup -q
 
 %build
-%configure
+%configure \
+	%{!?with_static_modules:--disable-static}
 %{__make}
 
 %install
@@ -100,7 +105,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man3/gic*.3*
 %{_mandir}/man7/libgiigic-usage.7*
 
+%if %{with static_modules}
 %files static
 %defattr(644,root,root,755)
 %{_libdir}/libgicaction.a
 %{_libdir}/libgiigic.a
+%endif
